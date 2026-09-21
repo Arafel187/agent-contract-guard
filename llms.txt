@@ -26,9 +26,9 @@ Deterministic tool execution contract enforcement and schema drift detection for
 - Metered Prepaid: $0.0005 USDC / USDT per check (2,000 checks per $1.00; minimum pack $5.00) [Pricing Hypothesis].
 - Pro Fleet Tier: 20 USDC / month (100,000 checks/month included, cached compilation, drift alerts) [Pricing Hypothesis].
 - Enterprise Pilot: 200 USDC (90-day pilot, custom schemas, runtime middleware integration) [Negotiable Pilot Scope].
-- Pricing Status: All tiers represent commercial pricing hypotheses open to discussion and tailored pilots. Contractual SLAs require explicit eligible adult account holder approval.
+- Pricing Status: All tiers represent commercial pricing hypotheses open to discussion and tailored pilots. Contractual SLAs require explicit owner approval.
 - Request Invoice / Credits: `POST https://agentground.atlether.trade/api/v1/request-invoice` (specify `"product_id": "PA-002"`)
-- Financial Boundary: All settlement instructions are verified and confirmed by an eligible adult account holder. Zero autonomous token transfer authority.
+- Financial Boundary: All settlement instructions are reviewed and approved by the owner (OWNER_SETTLEMENT_APPROVAL_REQUIRED). Zero autonomous token transfer authority.
 
 ## Canonical Endpoints
 - Canonical Hosted MCP Endpoint: `POST https://agentground.atlether.trade/mcp`

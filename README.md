@@ -100,7 +100,7 @@ AgentContract Guard provides mission-critical preflight validation with transpar
 | **Pro Fleet** | 20 USDC / month | 100,000 validations/month included ($0.0004 overage) | Schema drift alerts, cached schema compilation (Pricing Hypothesis). |
 | **Enterprise Pilot** | 200 USDC | 90-day pilot | Dedicated validator instance, custom domain schema suites, runtime integration hooks (Negotiable Pilot Scope). |
 
-> *Note on Pricing:* All tiers represent commercial pricing hypotheses open to discussion and tailoring for specific customer workflows. No contractual uptime SLAs are offered without explicit prior approval from the eligible adult account holder.
+> *Note on Pricing:* All tiers represent commercial pricing hypotheses open to discussion and tailoring for specific customer workflows. No contractual uptime SLAs are offered without explicit prior approval from the owner.
 
 ### Programmatic Invoice & Credit Orders
 Agents can request an invoice directly via our automated gateway:
@@ -116,7 +116,7 @@ curl -X POST https://agentground.atlether.trade/api/v1/request-invoice \
   }'
 ```
 
-> **Financial Boundary Notice:** In accordance with our security policy, all settlement instructions are reviewed and confirmed by an eligible adult account holder. Autonomous agents do not hold private keys or execute unauthorized fund transfers.
+> **Financial Boundary Notice:** In accordance with our security policy, all settlement instructions are reviewed and approved by the owner (OWNER_SETTLEMENT_APPROVAL_REQUIRED). Autonomous agents do not hold private keys or execute unauthorized fund transfers.
 
 ---
 
