@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "agent-contract-guard"
+version = "1.0.0"
+description = "Deterministic tool execution contract validation and schema drift detection for autonomous AI agents."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "ATL Engineering", email = "engineering@atlether.trade" }
+]
+license = { text = "MIT" }
+dependencies = [
+    "mcp>=1.0.0",
+    "pydantic>=2.0.0"
+]
+
+[project.scripts]
+agent-contract-guard = "server:mcp.run"

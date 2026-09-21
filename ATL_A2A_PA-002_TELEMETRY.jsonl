@@ -1,0 +1,4 @@
+{"product_agent_id": "PA-002", "timestamp": "2026-09-21T10:31:54Z", "verdict": "CONFORMANT", "is_valid": true, "errors_count": 0, "latency_ms": 0.007, "classification": "AUTONOMOUS_EXECUTION"}
+{"product_agent_id": "PA-002", "timestamp": "2026-09-21T10:31:54Z", "verdict": "CONFORMANT_WITH_SCHEMA_DRIFT", "is_valid": true, "errors_count": 0, "latency_ms": 0.005, "classification": "AUTONOMOUS_EXECUTION"}
+{"product_agent_id": "PA-002", "timestamp": "2026-09-21T10:31:54Z", "verdict": "CONTRACT_VIOLATION", "is_valid": false, "errors_count": 1, "latency_ms": 0.004, "classification": "AUTONOMOUS_EXECUTION"}
+{"product_agent_id": "PA-002", "timestamp": "2026-09-21T10:31:54Z", "verdict": "CONTRACT_VIOLATION", "is_valid": false, "errors_count": 1, "latency_ms": 0.005, "classification": "AUTONOMOUS_EXECUTION"}

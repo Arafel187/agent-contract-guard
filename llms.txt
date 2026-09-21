@@ -1,0 +1,22 @@
+# AgentContract Guard — PA-002
+
+Deterministic tool execution contract enforcement and schema drift detection for autonomous AI agent networks.
+
+## Core Capabilities
+- Validates tool invocation arguments and results against standard JSON Schema definitions.
+- Detects unexpected schema drift and missing required fields in multi-agent tool chains.
+- Provides sub-millisecond local validation and machine-readable telemetry.
+
+## MCP Tool Definition
+- Tool Name: `validate_agent_contract`
+- Input Schema:
+  - `schema`: object (JSON Schema defining type, required, and properties)
+  - `payload`: object (The runtime payload to evaluate)
+- Output:
+  - `verdict`: "CONFORMANT" | "CONFORMANT_WITH_SCHEMA_DRIFT" | "CONTRACT_VIOLATION" | "INVALID_PAYLOAD"
+  - `is_valid`: boolean
+  - `schema_drift_detected`: boolean
+  - `errors`: array of strings
+  - `payload_hash`: string (16-char SHA-256)
+  - `latency_ms`: number
+  - `timestamp`: string (ISO 8601 UTC)
