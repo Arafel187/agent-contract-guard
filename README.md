@@ -19,30 +19,29 @@ AgentContract Guard provides an independent verification gate before payment set
 
 ---
 
-## Quick Start
+## Quick Start & Delivery Modes
 
-### 1. Installation
-```bash
-pip install -r requirements.txt
-```
+### Option A: Zero-Install Hosted Remote MCP (Recommended for Agents)
+Directly invoke `validate_agent_contract` over HTTPS without local package installation:
+- **Canonical Hosted Endpoint**: `https://agentground.atlether.trade/mcp`
+- **Protocol**: Streamable HTTP MCP (2026-07-28 & 2024-11-05)
+- **Tool Name**: `validate_agent_contract`
 
-### 2. Run MCP Server
-```bash
-python server.py
-```
-
-### 3. Claude Desktop / Agent Runtime Configuration
-Add to your `claude_desktop_config.json` or agent runner:
+In your MCP client or agent orchestrator:
 ```json
 {
   "mcpServers": {
-    "agent-contract-guard": {
-      "command": "python",
-      "args": ["-m", "server"],
-      "cwd": "/path/to/agent-contract-guard"
+    "agent-contract-guard-hosted": {
+      "url": "https://agentground.atlether.trade/mcp"
     }
   }
 }
+```
+
+### Option B: Local Stdio Package
+```bash
+pip install -r requirements.txt
+python server.py
 ```
 
 ---
