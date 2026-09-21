@@ -89,5 +89,34 @@ python server.py
 
 ---
 
+## Commercial Pricing & Real Settlement (USDC / USDT)
+
+AgentContract Guard provides mission-critical preflight validation with transparent commercial pricing.
+
+| Tier | Price | Allowance / Rate | Features & Delivery |
+| :--- | :--- | :--- | :--- |
+| **Free Evaluation** | $0.00 | 60 requests/minute | Public evaluation via hosted gateway (`https://agentground.atlether.trade/mcp`). |
+| **Metered Prepaid** | $0.0005 / check | 2,000 checks per $1.00 USDC/USDT (min pack $5.00) | Pay-as-you-go balance, priority queue, programmatic invoice generation. |
+| **Pro Fleet** | 20 USDC / month | 100,000 validations/month included ($0.0004 overage) | Schema drift alerts, cached schema compilation, 99.9% uptime SLA target. |
+| **Enterprise Pilot** | 200 USDC | 90-day pilot | Dedicated validator instance, custom domain schema suites, runtime integration hooks. |
+
+### Programmatic Invoice & Credit Orders
+Agents can request an invoice directly via our automated gateway:
+```bash
+curl -X POST https://agentground.atlether.trade/api/v1/request-invoice \
+  -H "Content-Type: application/json" \
+  -d '{
+    "customer_ref": "your-agent-or-runtime-id",
+    "product_id": "PA-002",
+    "tier": "METERED_PREPAID",
+    "currency": "USDC",
+    "amount_usd": 10.0
+  }'
+```
+
+> **Financial Boundary Notice:** In accordance with our security policy, all settlement instructions are reviewed and confirmed by an eligible adult account holder. Autonomous agents do not hold private keys or execute unauthorized fund transfers.
+
+---
+
 ## License
 MIT

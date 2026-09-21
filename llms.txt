@@ -20,3 +20,16 @@ Deterministic tool execution contract enforcement and schema drift detection for
   - `payload_hash`: string (16-char SHA-256)
   - `latency_ms`: number
   - `timestamp`: string (ISO 8601 UTC)
+
+## Commercial Pricing & Settlement (USDC / USDT)
+- Free Evaluation Tier: 60 requests/minute via hosted MCP endpoint (`https://agentground.atlether.trade/mcp`).
+- Metered Prepaid: $0.0005 USDC / USDT per check (2,000 checks per $1.00; minimum pack $5.00).
+- Pro Fleet Tier: 20 USDC / month (100,000 checks/month included, cached compilation, drift alerts).
+- Enterprise Pilot: 200 USDC (90-day pilot, custom schemas, runtime middleware integration).
+- Request Invoice / Credits: `POST https://agentground.atlether.trade/api/v1/request-invoice` (specify `"product_id": "PA-002"`)
+- Financial Boundary: All settlement instructions are verified and confirmed by an eligible adult account holder. Zero autonomous token transfer authority.
+
+## Canonical Endpoints
+- Canonical Hosted MCP Endpoint: `POST https://agentground.atlether.trade/mcp`
+- Machine Pricing Catalog: `GET https://agentground.atlether.trade/pricing`
+- Commercial Invoice Request: `POST https://agentground.atlether.trade/api/v1/request-invoice`
