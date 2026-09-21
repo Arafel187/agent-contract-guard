@@ -93,12 +93,14 @@ python server.py
 
 AgentContract Guard provides mission-critical preflight validation with transparent commercial pricing.
 
-| Tier | Price | Allowance / Rate | Features & Delivery |
+| Tier | Price (Hypothesis) | Allowance / Rate | Features & Delivery |
 | :--- | :--- | :--- | :--- |
 | **Free Evaluation** | $0.00 | 60 requests/minute | Public evaluation via hosted gateway (`https://agentground.atlether.trade/mcp`). |
-| **Metered Prepaid** | $0.0005 / check | 2,000 checks per $1.00 USDC/USDT (min pack $5.00) | Pay-as-you-go balance, priority queue, programmatic invoice generation. |
-| **Pro Fleet** | 20 USDC / month | 100,000 validations/month included ($0.0004 overage) | Schema drift alerts, cached schema compilation, 99.9% uptime SLA target. |
-| **Enterprise Pilot** | 200 USDC | 90-day pilot | Dedicated validator instance, custom domain schema suites, runtime integration hooks. |
+| **Metered Prepaid** | $0.0005 / check | 2,000 checks per $1.00 USDC/USDT (min pack $5.00) | Pay-as-you-go balance, priority queue, programmatic invoice generation (Pricing Hypothesis). |
+| **Pro Fleet** | 20 USDC / month | 100,000 validations/month included ($0.0004 overage) | Schema drift alerts, cached schema compilation (Pricing Hypothesis). |
+| **Enterprise Pilot** | 200 USDC | 90-day pilot | Dedicated validator instance, custom domain schema suites, runtime integration hooks (Negotiable Pilot Scope). |
+
+> *Note on Pricing:* All tiers represent commercial pricing hypotheses open to discussion and tailoring for specific customer workflows. No contractual uptime SLAs are offered without explicit prior approval from the eligible adult account holder.
 
 ### Programmatic Invoice & Credit Orders
 Agents can request an invoice directly via our automated gateway:
